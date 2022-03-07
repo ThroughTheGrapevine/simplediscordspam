@@ -11,7 +11,7 @@ message2 = ""
 
 async def sendmsg():
     channel1 = discord.utils.get(client.get_all_channels(), name="")  #you can use channel ids instead but channel ids will often change for various reasons
-    channel2 = discord.utils.get(client.get_all_channels(), name="")  #if you have 2 channels with the same name you have to use ids to differntiate them
+    channel2 = discord.utils.get(client.get_all_channels(), name="")  #if you have 2 channels with the same name you have to use ids to differentiate them
 
     await channel1.send(message)
     await asyncio.sleep(1) #adjust delay / add channels here
